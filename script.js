@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Fade-in on scroll (Intersection Observer)
-const fadeElements = document.querySelectorAll('.section-title, .about-text, .about-image-wrapper, .project-card, .skill-category, .contact-text, .social-links');
+const fadeElements = document.querySelectorAll('.section-title, .about-text, .about-image-wrapper, .project-card, .skill-category, .instagram-grid, .instagram-cta, .contact-text, .social-links');
 
 fadeElements.forEach(el => el.classList.add('fade-in'));
 
