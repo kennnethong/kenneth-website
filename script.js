@@ -15,19 +15,8 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Navbar shadow on scroll
-const nav = document.querySelector('.nav');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
-  }
-});
-
 // Fade-in on scroll (Intersection Observer)
-const fadeElements = document.querySelectorAll('.section-title, .about-text, .about-image-wrapper, .project-card, .skill-category, .instagram-grid, .instagram-cta, .contact-text, .social-links');
+const fadeElements = document.querySelectorAll('.eyebrow, .headline, .lead, .skill-card, .instagram-grid, .center-cta, .project-panel > *, .social-links');
 
 fadeElements.forEach(el => el.classList.add('fade-in'));
 
@@ -40,7 +29,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
 );
 
 fadeElements.forEach(el => observer.observe(el));
