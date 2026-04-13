@@ -16,7 +16,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 // Fade-in on scroll (Intersection Observer)
-const fadeElements = document.querySelectorAll('.eyebrow, .headline, .lead, .building-card, .toolkit-block, .instagram-grid, .center-cta, .email-link, .social-links');
+const fadeElements = document.querySelectorAll('.eyebrow, .headline, .lead, .building-card, .toolkit-block, .instagram-grid, .center-cta, .email-link, .social-links, .blog-intro-lead, .post-card, .post-title, .post-content, .post-back-top');
 
 fadeElements.forEach(el => el.classList.add('fade-in'));
 
